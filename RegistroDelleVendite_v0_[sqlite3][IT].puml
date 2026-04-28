@@ -1,0 +1,25 @@
+@startuml u1
+	
+	hide circle
+	skin rose
+	hide empty members
+
+	entity Categorie {
+		*id : INTEGER
+		nome : VARCHAR
+		descrizione : TEXT
+	} 
+
+	entity Prodotti {
+		*id : INTEGER
+	}
+
+	entity CategoriePerProdotti {
+		id : INTEGER
+		id : INTEGER
+	}
+
+	Categorie ||-l-|| CategoriePerProdotti
+	CategoriePerProdotti --- Prodotti
+
+@enduml
