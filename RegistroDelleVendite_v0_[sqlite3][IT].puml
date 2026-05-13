@@ -1,5 +1,5 @@
 @startuml u1
-	
+
 	hide circle
 	skin rose
 	hide empty members
@@ -8,13 +8,34 @@
 		*id : INTEGER
 		nome : VARCHAR
 		descrizione : TEXT
-	} 
+	}
 
 	entity Prodotti {
 		*id : INTEGER
+		nome : VARCHAR
+		descrizione : TEXT
 	}
 
 	entity CategoriePerProdotti {
+		id : INTEGER
+		id : INTEGER
+	}
+
+	entity Fornitori {
+		*id : INTEGER
+		nome : VARCHAR
+	}
+
+	entity MagazziniMerci {
+		*id : INTEGER
+		nome : VARCHAR
+		descrizione : TEXT
+		indirizzo : TEXT
+	}
+
+	entity ArticoliNellInventario {
+		*id : INTEGER
+		UnitáDiVendita : VARCHAR
 		id : INTEGER
 		id : INTEGER
 	}
